@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+
+  api:
+    build: ../aged-care-kg-api
+    ports:
+      - "4000:4000"
+
+  ui:
+    build: ../aged-care-kg-ui
+    ports:
+      - "3000:3000"
+
+  admin:
+    build: ../aged-care-kg-admin
+
+  etl:
+    build: ../aged-care-kg-etl
